@@ -1,0 +1,25 @@
+/* eslint-disable import/no-anonymous-default-export */
+export default {
+    logo: "/assets/svg/logo.svg",
+    card1: "/assets/images/card1.png",
+    card2: "/assets/images/card2.png",
+    card3: "/assets/images/card3.png",
+    card4: "/assets/images/card4.png",
+    card5: "/assets/images/card5.png",
+    mockup: "/assets/images/mockup.png",
+    stars: "/assets/images/stars.png",
+    profile1: "/assets/images/review-profile-1.png",
+    profile2: "/assets/images/review-profile-2.png",
+    profile3: "/assets/images/review-profile-3.png",
+    icons: {
+        android: "/assets/svg/android.svg",
+        apple: "/assets/svg/apple.svg",
+        barChart: "/assets/svg/bar-chart.svg",
+        camera: "/assets/svg/camera.svg",
+        brain: "/assets/svg/brain.svg",
+        download: "/assets/svg/download.svg",
+        magnifying: "/assets/svg/magnifying.svg",
+        robot: "/assets/svg/robot.svg",
+        tools: "/assets/svg/tools.svg",
+    },
+};
