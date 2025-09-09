@@ -7,11 +7,11 @@ export default function HeroSection() {
             <div>
                 <header>
                     <h1 className="mt-[80px] text-center font-medium text-[40px] md:text-[50px] leading-[1.1] md:leading-[1.1] max-w-[600px] w-[95%] mx-auto tracking-[-1px] md:tracking-[-2.53px] pb-8 md:pb-8 [@media(max-width:768px)]:text-[32px] [@media(max-width:768px)]:font-manrope [@media(max-width:768px)]:pb-3 [@media(max-width:768px)]:max-w-[350px]">
-                        <span className="bg-gradient-to-b from-[#DEF9FF] from-5% to-[#41ADC5] to-77% bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-b from-[#DEF9FF] from-5% to-[#41ADC5] to-77% bg-clip-text text-transparent tracking-[0.7px]">
                             Smarter Betting
                         </span>
                         <br />
-                        <span className="bg-gradient-to-b from-[#8DEAFF] from-0% to-[#025062] to-100% bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-b from-[#8DEAFF] from-0% to-[#025062] to-100% bg-clip-text text-transparent tracking-[0.7px]">
                             Insights with Bet.AI
                         </span>
                     </h1>
