@@ -199,7 +199,8 @@ export default function Footer() {
                     </h2>
                     <p className="text-white/60 text-lg mb-8 max-w-[500px] mx-auto">
                         Follow data to guide your bets: line moves, money split,
-                        injuries, weather, refs... Trusted by 15,000+ bettors.
+                        injuries, weather, refs... Trusted by{" "}
+                        <span className="text-white">15,000+ bettors.</span>
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
                         <a

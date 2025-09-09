@@ -17,7 +17,7 @@ export default function ProductFeatures() {
                     />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center order-1 md:order-2">
-                    <h1 className="text-white text-5xl font-medium mb-10">
+                    <h1 className="text-white text-4xl font-medium mb-10">
                         From screenshot to signal
                     </h1>
                     <p className="text-white/50 text-2xl">
@@ -37,7 +37,7 @@ export default function ProductFeatures() {
                     />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center order-1 md:order-2">
-                    <h2 className="text-white text-5xl font-medium mb-10">
+                    <h2 className="text-white text-4xl font-medium mb-10">
                         Data-backed, AI-driven insights
                     </h2>
                     <p className="text-white/50 text-2xl">
@@ -57,7 +57,7 @@ export default function ProductFeatures() {
                     />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center order-1 md:order-2">
-                    <h2 className="text-white text-5xl font-medium mb-10">
+                    <h2 className="text-white text-4xl font-medium mb-10">
                         Every detail, surfaced
                     </h2>
                     <p className="text-white/50 text-2xl">
@@ -77,7 +77,7 @@ export default function ProductFeatures() {
                     />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center order-1 md:order-2">
-                    <h2 className="text-white text-5xl font-medium mb-10">
+                    <h2 className="text-white text-4xl font-medium mb-10">
                         Market context, decoded
                     </h2>
                     <p className="text-white/50 text-2xl">
@@ -97,7 +97,7 @@ export default function ProductFeatures() {
                     />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col justify-center order-1 md:order-2">
-                    <h2 className="text-white text-5xl font-medium mb-10">
+                    <h2 className="text-white text-4xl font-medium mb-10">
                         Ask our analyst, 24/7
                     </h2>
                     <p className="text-white/50 text-2xl">

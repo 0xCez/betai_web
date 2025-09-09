@@ -13,7 +13,7 @@ export function meta({}: MetaArgs) {
 
 export default function Index() {
     return (
-        <div className="p-10">
+        <div>
             <HeroSection />
             <FeatureGrid />
             <ProductFeatures />
