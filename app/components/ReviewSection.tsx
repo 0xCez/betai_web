@@ -49,6 +49,9 @@ export default function ReviewSection() {
                             duration: 0.6,
                             ease: "easeInOut", // 👈 easing in
                         }}
+                        whileHover={{
+                            y: -10,
+                        }}
                         className="w-full flex flex-col justify-between bg-linear-to-b from-[#121212] from-0% to-[#0B0B0B] to-100% rounded-[40px] p-6 border border-[rgba(145,145,145,0.3)]"
                         role="listitem"
                     >
@@ -108,6 +111,9 @@ export default function ReviewSection() {
                             ease: "easeInOut", // 👈 easing in
                             delay: 0.2,
                         }}
+                        whileHover={{
+                            y: -10,
+                        }}
                         className="w-full flex flex-col justify-between bg-linear-to-b from-[#121212] from-0% to-[#0B0B0B] to-100% rounded-[40px] p-6 border border-[rgba(145,145,145,0.3)]"
                         role="listitem"
                     >
@@ -164,6 +170,9 @@ export default function ReviewSection() {
                             duration: 0.6,
                             ease: "easeInOut", // 👈 easing in
                             delay: 0.4,
+                        }}
+                        whileHover={{
+                            y: -10,
                         }}
                         className="w-full flex flex-col justify-between bg-linear-to-b from-[#121212] from-0% to-[#0B0B0B] to-100% rounded-[40px] p-6 border border-[rgba(145,145,145,0.3)]"
                         role="listitem"

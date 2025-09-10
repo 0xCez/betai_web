@@ -1,6 +1,7 @@
 import assets from "@/json/assets";
 import React from "react";
 import * as motion from "motion/react-client";
+import { Link } from "react-router";
 
 export default function HeroSection() {
     return (
@@ -50,8 +51,13 @@ export default function HeroSection() {
                     delay: 0.4,
                 }}
             >
-                <a
-                    href="#"
+                <Link
+                    to={
+                        navigator.userAgent.includes("iPhone") ||
+                        navigator.userAgent.includes("Mac")
+                            ? "https://apps.apple.com/us/app/bet-ai-betting-assistant/id6743808717"
+                            : "https://play.google.com/store/apps/details?id=com.awesome.betai&utm_source=emea_Med"
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative flex justify-center items-center w-[192px] h-[50px] px-[15px] py-[2px] gap-[10px] mx-auto mt-8 rounded-[200px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(255,255,255,0.05)]"
@@ -69,7 +75,7 @@ export default function HeroSection() {
                             Download Bet.AI
                         </span>
                     </span>
-                </a>
+                </Link>
             </motion.div>
             <motion.div
                 initial={{ y: 15, opacity: 0 }}

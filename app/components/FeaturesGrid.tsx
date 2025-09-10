@@ -25,7 +25,7 @@ export function FeatureGrid() {
                     full picture.
                 </p>
             </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 max-w-[1200px] mx-auto px-4 relative w-full before:hidden md:before:block before:content-[''] before:absolute before:top-[50%] before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.05)_0%,rgba(0,221,255,0.5)_55%,rgba(0,221,255,0.05)_100%)]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 max-w-[1200px] mx-auto px-4 relative w-full before:hidden md:before:block before:content-[''] before:absolute before:top-[50%] before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.05)_0%,rgba(0,221,255,0.4)_55%,rgba(0,221,255,0.05)_100%)]">
                 <motion.div
                     initial={{ y: 15, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -34,7 +34,7 @@ export function FeatureGrid() {
                         ease: "easeInOut", // 👈 easing in
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
@@ -45,13 +45,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Snap & Analyze
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Upload a bet slip or take a pic of the game your
@@ -67,7 +67,7 @@ export function FeatureGrid() {
                         delay: 0.1,
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
@@ -78,13 +78,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         AI-Powered Breakdown
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Thousands of data points processed instantly: line
@@ -100,7 +100,7 @@ export function FeatureGrid() {
                         delay: 0.2,
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
@@ -111,13 +111,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Sharp vs Public
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         See where the smart money is vs the crowd — spot market
@@ -133,7 +133,7 @@ export function FeatureGrid() {
                         delay: 0.1,
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
@@ -144,13 +144,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Hidden Factors Uncovered
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Weather, injuries, refs, momentum… Bet.AI highlights the
@@ -166,7 +166,7 @@ export function FeatureGrid() {
                         delay: 0.2,
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
@@ -177,13 +177,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Always-On Analyst
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Debate your picks, or any factors anytime with your 24/7
@@ -210,13 +210,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Pro Tools
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Custom alerts, deeper prop breakdowns, bookmaker

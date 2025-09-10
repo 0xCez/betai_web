@@ -6,7 +6,7 @@ export default function ProductFeatures() {
     return (
         <section
             id="product"
-            className="w-full max-w-[1200px] mx-auto px-4 mt-[50px] md:mt-[150px]"
+            className="w-full max-w-[1200px] mx-auto px-4 pt-[50px] md:pt-[150px]"
         >
             <article className="mb-[50px] md:mb-[160px] flex flex-col md:flex-row items-center gap-[30px] md:gap-[100px]">
                 <motion.div

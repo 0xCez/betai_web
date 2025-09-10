@@ -21,5 +21,7 @@ export default {
         magnifying: "/assets/svg/magnifying.svg",
         robot: "/assets/svg/robot.svg",
         tools: "/assets/svg/tools.svg",
+        instagram: "/assets/svg/instagram.svg",
+        tiktok: "/assets/svg/tiktok.svg",
     },
 };

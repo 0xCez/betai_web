@@ -1,8 +1,19 @@
 export const FAQs = [
     {
-        title: "When are payments processed? ",
-        content:
-            "Bet.AI™ creators are paid on the 1st of each month. We take a snapshot of all the views generated during the previous month and pay you the corresponding amount.",
+        title: "What happens if I don’t reach the agreed Target Views?",
+        content: `You may choose one of two options:
+        <ol>
+<li>Pro-Rata Payment: Get paid proportionally to the views you delivered.</li>
+<li>Additional Posting: Publish extra posts beyond the minimum required until you reach the Target Views.</li></ol>`,
+    },
+    {
+        title: "When are payments processed?",
+        content: `Payments for Bet.AI™ creators are split into two parts:
+<ul>
+<li>20% upfront is paid upon signing the contract.</li>
+<li>80% completion is paid once the agreed Target Views are reached within the 4-week Campaign Period.</li>
+</ul>
+If Target Views are not met, payment is adjusted on a pro-rata basis or the Influencer may publish additional content to reach the target.`,
     },
     {
         title: "What payment methods do we support?",
@@ -10,27 +21,39 @@ export const FAQs = [
             "We currently only support PayPal or Bank payments for amounts above 500$ (this may change in the future).",
     },
     {
-        title: "Can I post as much content as I want?",
-        content:
-            "Yes, you can post as much content as you want. We will pay you for all the views generated.",
-    },
-    {
         title: "When can I start making and posting content?",
         content:
-            "Once you sign the agreement, you can start making content. (Takes 2 minutes)",
+            "Immediately after signing the contract. All posts must be published within the 4-week Campaign Period.",
     },
     {
         title: "Is there a minimum payout?",
-        content: "Yes, $20!",
+        content:
+            "No. Since payments are tied to a signed contract with agreed Target Views, the minimum payout is the 20% upfront payment.",
     },
     {
         title: "How long do views count toward payment?",
         content:
-            "Views for each videos are counted up to 3 weeks (21 days) after you post it. ",
+            "Only views generated within the 4-week Campaign Period count toward the agreed Target Views.",
+    },
+];
+
+export const CREATOR_OPTIONS = [
+    {
+        title: "SIGN THE AGREEMENT ✍",
+        content:
+            "Join the program by submitting your Paypal & a quick e-signature.",
     },
     {
-        title: "Are there performance bonuses?",
+        title: "READ OUR GUIDELINES 📖",
+        content: "Discover how to feature the app smoothly in your videos.",
+    },
+    {
+        title: "SUBMIT YOUR CONTENT 📤",
         content:
-            "Yes. If you post 10+ eligible videos in a month and we add a matching 10% bonus to that month’s payout This goes on for 15 videos (+15% on total payout) and 20 videos.<br/>Only videos that follow our content guidelines and required tags count. Spam, reposts, or attempts to game the system are ineligible and may void the bonus. ",
+            "Submit all videos via our Google Form so we can track all your views.",
+    },
+    {
+        title: "EARN MONEY 💵",
+        content: "Get pay $1-3 for every 1k views.",
     },
 ];
