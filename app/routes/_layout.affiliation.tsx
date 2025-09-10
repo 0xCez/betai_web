@@ -1,10 +1,20 @@
 import React from "react";
+import { ChevronDown } from "lucide-react";
+import * as motion from "motion/react-client";
 
 export default function Affiliation() {
     return (
         <div>
             <div>
-                <header>
+                <motion.header
+                    initial={{ y: 15, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut", // 👈 easing in
+                    }}
+                    viewport={{ once: true }}
+                >
                     <h1 className="mt-[80px] text-center font-medium text-[40px] md:text-[50px] leading-[1.1] md:leading-[1.1] max-w-[600px] w-[95%] mx-auto tracking-[-1px] md:tracking-[-2.53px] pb-8 md:pb-8 [@media(max-width:768px)]:text-[32px] [@media(max-width:768px)]:font-manrope [@media(max-width:768px)]:pb-3 [@media(max-width:768px)]:max-w-[350px]">
                         <span className="bg-gradient-to-b from-[#DEF9FF] from-5% to-[#41ADC5] to-77% bg-clip-text text-transparent tracking-[0.7px]">
                             Bet.AI
@@ -14,9 +24,19 @@ export default function Affiliation() {
                             Creator Program
                         </span>
                     </h1>
-                </header>
+                </motion.header>
             </div>
-            <div className="flex flex-col justify-center max-w-[600px] w-[90%] mx-auto text-center font-rethink-sans text-[18px] font-medium leading-[1.2] md:leading-[22.4px] tracking-[0.32px] text-white/50 [@media(max-width:768px)]:text-[16px] [@media(max-width:768px)]:max-w-[350px] [@media(max-width:768px)]:leading-[1.35]">
+            <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeInOut", // 👈 easing in
+                    delay: 0.15,
+                }}
+                viewport={{ once: true }}
+                className="flex flex-col justify-center max-w-[600px] w-[90%] mx-auto text-center font-rethink-sans text-[18px] font-medium leading-[1.2] md:leading-[22.4px] tracking-[0.32px] text-white/50 [@media(max-width:768px)]:text-[16px] [@media(max-width:768px)]:max-w-[350px] [@media(max-width:768px)]:leading-[1.35]"
+            >
                 <div className="jsx-25dad32578659cc7 hidden md:block">
                     <span className="jsx-25dad32578659cc7 text-white font-medium">
                         Earn $1 per 1k
@@ -41,8 +61,18 @@ export default function Affiliation() {
                 <div className="jsx-25dad32578659cc7 md:hidden">
                     successful Tiktok &amp; Reels.
                 </div>
-            </div>
-            <div className="transition-opacity duration-300 ease-out opacity-100">
+            </motion.div>
+            <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeInOut", // 👈 easing in
+                    delay: 0.3,
+                }}
+                viewport={{ once: true }}
+                className="transition-opacity duration-300 ease-out opacity-100"
+            >
                 <div className="flex justify-center items-center gap-2 md:gap-4 mt-8 flex-wrap">
                     <a
                         href="https://eu.jotform.com/sign/252376407366058/invite/01k3m3yn7g13f429d00b96c690"
@@ -73,8 +103,18 @@ export default function Affiliation() {
                         </span>
                     </a>
                 </div>
-            </div>
-            <div className="transition-opacity duration-300 ease-out opacity-100">
+            </motion.div>
+            <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeInOut", // 👈 easing in
+                    delay: 0.45,
+                }}
+                viewport={{ once: true }}
+                className="transition-opacity duration-300 ease-out opacity-100"
+            >
                 <div className="mt-[60px] w-[90%] max-w-[1000px] mx-auto rounded-[30px] bg-white/10 overflow-hidden relative">
                     <div className="aspect-video w-full">
                         <iframe
@@ -91,8 +131,17 @@ export default function Affiliation() {
                         ></iframe>
                     </div>
                 </div>
-            </div>
-            <div className="transition-opacity duration-300 ease-out opacity-100">
+            </motion.div>
+            <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeInOut", // 👈 easing in
+                }}
+                viewport={{ once: true }}
+                className="transition-opacity duration-300 ease-out opacity-100"
+            >
                 <div className="jsx-25dad32578659cc7 mt-[120px] md:mt-[120px] mt-[80px] w-[90%] max-w-[700px] mx-auto space-y-4 md:space-y-6 space-y-3">
                     <div className="jsx-25dad32578659cc7 flex items-center rounded-[20px] md:rounded-[200px] bg-[#111111] border border-white/5 p-3 md:p-4 min-h-[90px] md:min-h-[90px] min-h-[70px] overflow-hidden relative cursor-pointer hover:bg-[#1a1a1a] transition-colors duration-150">
                         <div className="jsx-25dad32578659cc7 flex-shrink-0 w-[50px] h-[50px] md:w-[60px] md:h-[60px] bg-[#00A0B9] rounded-full flex items-center justify-center text-white text-[24px] md:text-[30px] font-bold mr-3 md:mr-6">
@@ -122,7 +171,7 @@ export default function Affiliation() {
                             </p>
                         </div>
                     </div>
-                    <div className="jsx-25dad32578659cc7 flex items-center rounded-[20px] md:rounded-[200px] bg-[#111111] border border-white/5 p-3 md:p-4 min-h-[90px] md:min-h-[90px] min-h-[70px] overflow-hidden relative cursor-pointer hover:bg-[#1a1a1a] transition-colors duration-150">
+                    <div className="jsx-25dad32578659cc7 flex items-center rounded-[20px] md:rounded-[200px] bg-[#111111] border border-white/5 p-3 md:p-4 min-h-[90px] md:min-h-[90px] min-h-[70px] overflow-hidden relative cursor-pointer hover:bg-[#1a1a1a] transition-colors duration-150 rotate-z-2 my-8">
                         <div className="jsx-25dad32578659cc7 flex-shrink-0 w-[50px] h-[50px] md:w-[60px] md:h-[60px] bg-[#00A0B9] rounded-full flex items-center justify-center text-white text-[24px] md:text-[30px] font-bold mr-3 md:mr-6">
                             3
                         </div>
@@ -150,7 +199,7 @@ export default function Affiliation() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <div className="jsx-25dad32578659cc7 mt-[140px] md:mt-[140px] mt-[100px] py-[80px] md:py-[80px] py-[40px] bg-[#141414] overflow-hidden">
                 <div className="jsx-25dad32578659cc7 w-full max-w-none">
                     <h2 className="jsx-25dad32578659cc7 text-center text-white text-[40px] md:text-[48px] font-bold mb-4">
@@ -166,7 +215,16 @@ export default function Affiliation() {
                     </p>
                 </div>
             </div>
-            <div className="transition-opacity duration-300 ease-out opacity-100">
+            <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeInOut", // 👈 easing in
+                }}
+                viewport={{ once: true }}
+                className="transition-opacity duration-300 ease-out opacity-100"
+            >
                 <div className="jsx-25dad32578659cc7 mt-[100px] md:mt-[100px] mt-[60px] mb-[100px] md:mb-[100px] mb-[60px]">
                     <div className="w-[90%] max-w-[1000px] mx-auto">
                         <h2 className="jsx-25dad32578659cc7 text-center text-white text-[40px] md:text-[48px] font-bold mb-4">
@@ -183,9 +241,7 @@ export default function Affiliation() {
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
                                         When are payments processed?
                                     </span>
-                                    <span className="text-white text-2xl">
-                                        +
-                                    </span>
+                                    <ChevronDown className="text-white text-2xl" />
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
@@ -202,9 +258,7 @@ export default function Affiliation() {
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
                                         What payment methods do we support?
                                     </span>
-                                    <span className="text-white text-2xl">
-                                        +
-                                    </span>
+                                    <ChevronDown className="text-white text-2xl" />
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
@@ -219,9 +273,7 @@ export default function Affiliation() {
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
                                         Can I post as much content as I want?
                                     </span>
-                                    <span className="text-white text-2xl">
-                                        +
-                                    </span>
+                                    <ChevronDown className="text-white text-2xl" />
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
@@ -237,9 +289,7 @@ export default function Affiliation() {
                                         When can I start making and posting
                                         content?
                                     </span>
-                                    <span className="text-white text-2xl">
-                                        +
-                                    </span>
+                                    <ChevronDown className="text-white text-2xl" />
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
@@ -253,9 +303,7 @@ export default function Affiliation() {
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
                                         Is there a minimum payout?
                                     </span>
-                                    <span className="text-white text-2xl">
-                                        +
-                                    </span>
+                                    <ChevronDown className="text-white text-2xl" />
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
@@ -268,9 +316,7 @@ export default function Affiliation() {
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
                                         How long do views count toward payment?
                                     </span>
-                                    <span className="text-white text-2xl">
-                                        +
-                                    </span>
+                                    <ChevronDown className="text-white text-2xl" />
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
@@ -284,9 +330,7 @@ export default function Affiliation() {
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
                                         Are there performance bonuses?
                                     </span>
-                                    <span className="text-white text-2xl">
-                                        +
-                                    </span>
+                                    <ChevronDown className="text-white text-2xl" />
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
@@ -306,7 +350,7 @@ export default function Affiliation() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

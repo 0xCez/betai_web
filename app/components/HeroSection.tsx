@@ -1,28 +1,55 @@
 import assets from "@/json/assets";
 import React from "react";
+import * as motion from "motion/react-client";
 
 export default function HeroSection() {
     return (
         <div>
             <div>
-                <header>
-                    <h1 className="mt-[80px] text-center font-medium text-[40px] md:text-[50px] leading-[1.1] md:leading-[1.1] max-w-[600px] w-[95%] mx-auto tracking-[-1px] md:tracking-[-2.53px] pb-8 md:pb-8 [@media(max-width:768px)]:text-[32px] [@media(max-width:768px)]:font-manrope [@media(max-width:768px)]:pb-3 [@media(max-width:768px)]:max-w-[350px]">
-                        <span className="bg-gradient-to-b from-[#DEF9FF] from-5% to-[#41ADC5] to-77% bg-clip-text text-transparent tracking-[0.7px]">
-                            Smarter Betting
-                        </span>
-                        <br />
-                        <span className="bg-gradient-to-b from-[#8DEAFF] from-0% to-[#025062] to-100% bg-clip-text text-transparent tracking-[0.7px]">
-                            Insights with Bet.AI
-                        </span>
-                    </h1>
-                </header>
-                <p className="max-w-[450px] w-[90%] mx-auto text-center text-[18px] font-medium leading-[1.2] md:leading-[22.4px] tracking-[0.32px] text-white/50 [@media(max-width:768px)]:text-[16px] [@media(max-width:768px)]:max-w-[300px]">
+                <div>
+                    <motion.header
+                        initial={{ y: 15, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{
+                            duration: 0.6,
+                            ease: "easeInOut", // 👈 easing in
+                        }}
+                    >
+                        <h1 className="mt-[80px] text-center font-medium text-[40px] md:text-[50px] leading-[1.1] md:leading-[1.1] max-w-[600px] w-[95%] mx-auto tracking-[-1px] md:tracking-[-2.53px] pb-8 md:pb-8 [@media(max-width:768px)]:text-[32px] [@media(max-width:768px)]:font-manrope [@media(max-width:768px)]:pb-3 [@media(max-width:768px)]:max-w-[350px]">
+                            <span className="bg-gradient-to-b from-[#DEF9FF] from-5% to-[#41ADC5] to-77% bg-clip-text text-transparent tracking-[0.7px]">
+                                Smarter Betting
+                            </span>
+                            <br />
+                            <span className="bg-gradient-to-b from-[#8DEAFF] from-0% to-[#025062] to-100% bg-clip-text text-transparent tracking-[0.7px]">
+                                Insights with Bet.AI
+                            </span>
+                        </h1>
+                    </motion.header>
+                </div>
+                <motion.p
+                    className="max-w-[450px] w-[90%] mx-auto text-center text-[18px] font-medium leading-[1.2] md:leading-[22.4px] tracking-[0.32px] text-white/50 [@media(max-width:768px)]:text-[16px] [@media(max-width:768px)]:max-w-[300px]"
+                    initial={{ y: 15, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut", // 👈 easing in
+                        delay: 0.2,
+                    }}
+                >
                     You can’t control the odds, but you can use data to guide
                     your decisions.{" "}
                     <span className="text-white">15,000+ of users agree</span>.
-                </p>
+                </motion.p>
             </div>
-            <div>
+            <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeInOut", // 👈 easing in
+                    delay: 0.4,
+                }}
+            >
                 <a
                     href="#"
                     target="_blank"
@@ -43,8 +70,16 @@ export default function HeroSection() {
                         </span>
                     </span>
                 </a>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeInOut", // 👈 easing in
+                    delay: 0.6,
+                }}
+            >
                 <div className="mt-[0px] w-full md:w-[100%] lg:w-full max-w-[1000px] mx-auto px-4">
                     <img
                         src={assets.mockup}
@@ -53,7 +88,7 @@ export default function HeroSection() {
                         className="w-full h-auto"
                     />
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

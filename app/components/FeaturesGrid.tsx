@@ -1,9 +1,18 @@
 import assets from "@/json/assets";
+import * as motion from "motion/react-client";
 
 export function FeatureGrid() {
     return (
         <section id="features" className="py-20 md:pt-[160px] md:pb-20">
-            <div className="text-center mb-16">
+            <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeInOut", // 👈 easing in
+                }}
+                className="text-center mb-16"
+            >
                 <h2
                     className="text-white text-[26px] md:text-4xl font-medium leading-[46.8px] mb-4"
                     id="features-heading"
@@ -15,9 +24,18 @@ export function FeatureGrid() {
                     down odds, signals, and hidden factors so you always see the
                     full picture.
                 </p>
-            </div>
+            </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 max-w-[1200px] mx-auto px-4 relative w-full before:hidden md:before:block before:content-[''] before:absolute before:top-[50%] before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.05)_0%,rgba(0,221,255,0.5)_55%,rgba(0,221,255,0.05)_100%)]">
-                <div className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'>
+                <motion.div
+                    initial={{ y: 15, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut", // 👈 easing in
+                    }}
+                    viewport={{ amount: 0.4 }}
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                >
                     <div className="mb-3">
                         <img
                             alt="Dynamic height prediction feature icon"
@@ -39,8 +57,18 @@ export function FeatureGrid() {
                         Upload a bet slip or take a pic of the game your
                         watching: Bet.AI runs the numbers for you in seconds.
                     </p>
-                </div>
-                <div className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'>
+                </motion.div>
+                <motion.div
+                    initial={{ y: 15, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut", // 👈 easing in
+                        delay: 0.1,
+                    }}
+                    viewport={{ amount: 0.4 }}
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                >
                     <div className="mb-3">
                         <img
                             alt="Dynamic height prediction feature icon"
@@ -62,8 +90,18 @@ export function FeatureGrid() {
                         Thousands of data points processed instantly: line
                         shifts, market moves, and more.
                     </p>
-                </div>
-                <div className='px-0 py-8 md:p-5 relative  before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'>
+                </motion.div>
+                <motion.div
+                    initial={{ y: 15, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut", // 👈 easing in
+                        delay: 0.2,
+                    }}
+                    viewport={{ amount: 0.4 }}
+                    className='px-0 py-8 md:p-5 relative  before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                >
                     <div className="mb-3">
                         <img
                             alt="Dynamic height prediction feature icon"
@@ -85,8 +123,18 @@ export function FeatureGrid() {
                         See where the smart money is vs the crowd — spot market
                         edges fast.
                     </p>
-                </div>
-                <div className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'>
+                </motion.div>
+                <motion.div
+                    initial={{ y: 15, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut", // 👈 easing in
+                        delay: 0.1,
+                    }}
+                    viewport={{ amount: 0.4 }}
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                >
                     <div className="mb-3">
                         <img
                             alt="Dynamic height prediction feature icon"
@@ -108,8 +156,18 @@ export function FeatureGrid() {
                         Weather, injuries, refs, momentum… Bet.AI highlights the
                         details others overlook.
                     </p>
-                </div>
-                <div className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'>
+                </motion.div>
+                <motion.div
+                    initial={{ y: 15, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut", // 👈 easing in
+                        delay: 0.2,
+                    }}
+                    viewport={{ amount: 0.4 }}
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.5)_50%,rgba(0,221,255,0.00)_100%)]'
+                >
                     <div className="mb-3">
                         <img
                             alt="Dynamic height prediction feature icon"
@@ -131,8 +189,18 @@ export function FeatureGrid() {
                         Debate your picks, or any factors anytime with your 24/7
                         AI betting assistant.
                     </p>
-                </div>
-                <div className="px-0 py-8 md:p-5 relative ">
+                </motion.div>
+                <motion.div
+                    initial={{ y: 15, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut", // 👈 easing in
+                        delay: 0.3,
+                    }}
+                    viewport={{ amount: 0.4 }}
+                    className="px-0 py-8 md:p-5 relative "
+                >
                     <div className="mb-2">
                         <img
                             alt="Dynamic height prediction feature icon"
@@ -154,7 +222,7 @@ export function FeatureGrid() {
                         Custom alerts, deeper prop breakdowns, bookmaker
                         comparisons, and beyond.
                     </p>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

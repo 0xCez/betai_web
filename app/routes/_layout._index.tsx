@@ -3,6 +3,7 @@ import { Welcome } from "../welcome/welcome";
 import { FeatureGrid } from "@/components/FeaturesGrid";
 import HeroSection from "@/components/HeroSection";
 import ProductFeatures from "@/components/ProductFeatures";
+import ReviewSection from "@/components/ReviewSection";
 
 export function meta({}: MetaArgs) {
     return [
@@ -17,6 +18,7 @@ export default function Index() {
             <HeroSection />
             <FeatureGrid />
             <ProductFeatures />
+            <ReviewSection />
         </div>
     );
 }

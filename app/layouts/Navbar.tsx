@@ -39,7 +39,7 @@ export default function Navbar() {
                                     Product
                                 </a>
                             </div>
-                            <div className="flex lg:hidden items-center gap-2 flex-shrink-0">
+                            <div className="flex lg:hidden items-center gap-2.5 flex-shrink-0">
                                 <a
                                     href="https://apps.apple.com/app/apple-store/id6695758303?pt=154158&amp;ct=website&amp;mt=8"
                                     target="_blank"
@@ -80,7 +80,7 @@ export default function Navbar() {
                                     href="https://apps.apple.com/app/apple-store/id6695758303?pt=154158&amp;ct=website&amp;mt=8"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-2 w-[145px] h-[50px] px-[15px] py-[2px] rounded-[300px] bg-gradient-to-b from-[#00D1F2] to-[#017283] hover:opacity-90"
+                                    className="flex items-center justify-center gap-2.5 w-[145px] h-[50px] px-[15px] py-[2px] rounded-[300px] bg-gradient-to-b from-[#00D1F2] to-[#017283] hover:opacity-90"
                                 >
                                     <img
                                         src={assets.icons.apple}
@@ -96,7 +96,7 @@ export default function Navbar() {
                                     href="https://play.google.com/store/apps/details?id=com.virtualnetwork.taller"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-2 w-[145px] h-[50px] px-[15px] py-[2px] rounded-[300px] border border-white/15 hover:bg-white/5 hover:border-white/25"
+                                    className="flex items-center justify-center gap-2.5 w-[145px] h-[50px] px-[15px] py-[2px] rounded-[300px] border border-white/15 hover:bg-white/5 hover:border-white/25"
                                 >
                                     <img
                                         src={assets.icons.android}
