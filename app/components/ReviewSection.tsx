@@ -179,9 +179,9 @@ export default function ReviewSection() {
                     >
                         <blockquote>
                             <p className="text-[#949FA6] font-rethink-sans text-[18px] font-normal leading-[29.333px] mb-6">
-                                The chat feels like texting a pro bettor 😭. I
-                                ask why a line jumped and it breaks down public
-                                vs sharp flow, player news, and timing in plain
+                                The chat feels like texting a pro bettor. I ask
+                                why a line jumped and it breaks down public vs
+                                sharp flow, player news, and timing in plain
                                 English. No hype or bias, just reasons I can
                                 sanity-check.
                             </p>

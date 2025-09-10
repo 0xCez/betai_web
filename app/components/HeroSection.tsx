@@ -50,6 +50,73 @@ export default function HeroSection() {
                     ease: "easeInOut", // 👈 easing in
                     delay: 0.4,
                 }}
+                className="grid grid-flow-col place-items-center justify-center auto-cols-max flex-wrap gap-8 mt-8"
+            >
+                <div className="h-15">
+                    <img
+                        src={assets.cLogo1}
+                        alt="C Logo"
+                        className="h-full object-contain"
+                    />
+                </div>
+                <div className="h-15">
+                    <img
+                        src={assets.cLogo2}
+                        alt="C Logo"
+                        className="h-full object-contain"
+                    />
+                </div>
+                <div className="h-15 py-2">
+                    <img
+                        src={assets.cLogo3}
+                        alt="C Logo"
+                        className="h-full object-contain"
+                    />
+                </div>
+                <div className="h-15 py-1">
+                    <img
+                        src={assets.cLogo4}
+                        alt="C Logo"
+                        className="h-full object-contain"
+                    />
+                </div>
+                <div className="h-15 py-1">
+                    <img
+                        src={assets.cLogo5}
+                        alt="C Logo"
+                        className="h-full object-contain"
+                    />
+                </div>
+                <div className="h-15 py-2">
+                    <img
+                        src={assets.cLogo6}
+                        alt="C Logo"
+                        className="h-full object-contain"
+                    />
+                </div>
+                <div className="h-15 py-4">
+                    <img
+                        src={assets.cLogo7}
+                        alt="C Logo"
+                        className="h-full object-contain"
+                    />
+                </div>
+                <div className="h-15 py-5">
+                    <img
+                        src={assets.cLogo8}
+                        alt="C Logo"
+                        className="h-full object-contain"
+                    />
+                </div>
+            </motion.div>
+            <motion.div
+                initial={{ y: 15, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeInOut", // 👈 easing in
+                    delay: 0.5,
+                }}
             >
                 <Link
                     to={
@@ -78,7 +145,7 @@ export default function HeroSection() {
                 </Link>
             </motion.div>
             <motion.div
-                initial={{ y: 15, opacity: 0 }}
+                initial={{ y: 25, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
                     duration: 0.6,

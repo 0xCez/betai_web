@@ -146,9 +146,9 @@ export default function ProductFeatures() {
                         Market context, decoded
                     </h2>
                     <p className="text-white/50 text-lg md:text-xl">
-                        See how the line moved and where the money’s going.
-                        Compare public action vs sharp activity to understand
-                        the story behind today’s price.
+                        We compare current price with recent movement, public vs
+                        sharp split, and matchup context. If something looks
+                        off, you’ll see it fast, before it moves again.
                     </p>
                 </motion.div>
             </article>

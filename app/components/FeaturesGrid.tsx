@@ -17,7 +17,7 @@ export function FeatureGrid() {
                     className="text-white text-[26px] md:text-4xl font-medium leading-[46.8px] mb-4"
                     id="features-heading"
                 >
-                    Smarter betting starts here.
+                    Your betting edge starts here
                 </h2>
                 <p className="font-normal mx-auto px-4 md:px-0 max-w-[320px] md:max-w-[650px] text-center text-[16px] md:text-xl font-medium leading-[1.3] md:leading-[22.4px] tracking-[0.32px] text-white/50">
                     Bet.AI turns screenshots into instant insights, breaking
@@ -120,8 +120,8 @@ export function FeatureGrid() {
                         className="text-white/50 font-rethink-sans text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
-                        See where the smart money is vs the crowd — spot market
-                        edges fast.
+                        See where the smart money is. Compare pros vs the crowd
+                        instantly.
                     </p>
                 </motion.div>
                 <motion.div
@@ -153,8 +153,8 @@ export function FeatureGrid() {
                         className="text-white/50 font-rethink-sans text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
-                        Weather, injuries, refs, momentum… Bet.AI highlights the
-                        details others overlook.
+                        Weather, injuries, refs, momentum… Bet.AI highlights key
+                        details so nothing slips by.
                     </p>
                 </motion.div>
                 <motion.div
@@ -214,6 +214,9 @@ export function FeatureGrid() {
                         id="feature-0"
                     >
                         Pro Tools
+                        <div className="py-0.5 px-2.5 border border-[#00DDFF] bg-[rgba(0,221,255,0.1)] rounded-full text-[10px] text-[rgba(0,221,255,0.8)] ml-3">
+                            Coming soon
+                        </div>
                     </h3>
                     <p
                         className="text-white/50 font-rethink-sans text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
