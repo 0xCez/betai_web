@@ -27,13 +27,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] font-semibold leading-[22.4px] tracking-[0.32px] mb-2 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Snap & Analyze
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Upload a bet slip or take a pic of the game your
@@ -50,13 +50,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] font-semibold leading-[22.4px] tracking-[0.32px] mb-2 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         AI-Powered Breakdown
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Thousands of data points processed instantly: line
@@ -73,13 +73,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] font-semibold leading-[22.4px] tracking-[0.32px] mb-2 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Sharp vs Public
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         See where the smart money is vs the crowd — spot market
@@ -96,13 +96,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] font-semibold leading-[22.4px] tracking-[0.32px] mb-2 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Hidden Factors Uncovered
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Weather, injuries, refs, momentum… Bet.AI highlights the
@@ -119,13 +119,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] font-semibold leading-[22.4px] tracking-[0.32px] mb-2 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Always-On Analyst
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Debate your picks, or any factors anytime with your 24/7
@@ -142,13 +142,13 @@ export function FeatureGrid() {
                         />
                     </div>
                     <h3
-                        className="text-white font-rethink-sans text-[18px] font-semibold leading-[22.4px] tracking-[0.32px] mb-2 flex items-center gap-2"
+                        className="text-white font-rethink-sans text-[18px] md:text-2xl font-semibold leading-[22.4px] tracking-[0.32px] mb-3 flex items-center gap-2"
                         id="feature-0"
                     >
                         Pro Tools
                     </h3>
                     <p
-                        className="text-white/50 font-rethink-sans text-[14px] font-medium leading-[22.4px] tracking-[0.32px]"
+                        className="text-white/50 font-rethink-sans text-[14px] md:text-lg font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
                         Custom alerts, deeper prop breakdowns, bookmaker

@@ -189,7 +189,7 @@ export default function Affiliation() {
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
-                                        Taller™ creators are paid on the 1st of
+                                        Bet.AI™ creators are paid on the 1st of
                                         each month. We take a snapshot of all
                                         the views generated during the previous
                                         month and pay you the corresponding
@@ -217,7 +217,7 @@ export default function Affiliation() {
                             <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
                                 <button className="w-full flex items-center justify-between p-6 text-left">
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        Can I post unlimited content?
+                                        Can I post as much content as I want?
                                     </span>
                                     <span className="text-white text-2xl">
                                         +
@@ -234,26 +234,8 @@ export default function Affiliation() {
                             <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
                                 <button className="w-full flex items-center justify-between p-6 text-left">
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        Can I post the same content multiple
-                                        times?
-                                    </span>
-                                    <span className="text-white text-2xl">
-                                        +
-                                    </span>
-                                </button>
-                                <div className="overflow-hidden">
-                                    <div className="p-6 pt-0 text-white/70">
-                                        Yes! Even though it's not recommended
-                                        because it will significantly reduce the
-                                        chances of your video being seen by the
-                                        algorithm.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
-                                <button className="w-full flex items-center justify-between p-6 text-left">
-                                    <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        When can I start making content?
+                                        When can I start making and posting
+                                        content?
                                     </span>
                                     <span className="text-white text-2xl">
                                         +
@@ -277,14 +259,14 @@ export default function Affiliation() {
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
-                                        Yes, the minimum payout is 20$.
+                                        Yes, $20!
                                     </div>
                                 </div>
                             </div>
                             <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
                                 <button className="w-full flex items-center justify-between p-6 text-left">
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        Is there a revenue cap per video?
+                                        How long do views count toward payment?
                                     </span>
                                     <span className="text-white text-2xl">
                                         +
@@ -292,16 +274,15 @@ export default function Affiliation() {
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
-                                        Yes, we have a revenue cap of 500$ per
-                                        video.
+                                        Views for each videos are counted up to
+                                        3 weeks (21 days) after you post it.
                                     </div>
                                 </div>
                             </div>
                             <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
                                 <button className="w-full flex items-center justify-between p-6 text-left">
                                     <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        How long are my video views counted
-                                        towards payment?
+                                        Are there performance bonuses?
                                     </span>
                                     <span className="text-white text-2xl">
                                         +
@@ -309,79 +290,16 @@ export default function Affiliation() {
                                 </button>
                                 <div className="overflow-hidden">
                                     <div className="p-6 pt-0 text-white/70">
-                                        Views are only counted during the same
-                                        calendar month in which the video is
-                                        posted. For example, if you post on the
-                                        10th of the month, your views will be
-                                        tracked and counted for 20–21 days,
-                                        until the end of that month. Views after
-                                        that won’t be included for payment
-                                        purposes.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
-                                <button className="w-full flex items-center justify-between p-6 text-left">
-                                    <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        Is there any bonus based on performance?
-                                    </span>
-                                    <span className="text-white text-2xl">
-                                        +
-                                    </span>
-                                </button>
-                                <div className="overflow-hidden">
-                                    <div className="p-6 pt-0 text-white/70">
-                                        <div className="space-y-3">
-                                            <p>
-                                                Yes! In addition to the base
-                                                $1.00 RPM (Revenue per 1,000
-                                                views), we offer a
-                                                performance-based bonus
-                                                depending on how many eligible
-                                                videos you post in a given
-                                                calendar month:
-                                            </p>
-                                            <ul className="space-y-2 ml-4">
-                                                <li className="flex items-center">
-                                                    <span className="text-purple-400 mr-3 text-xl font-bold">
-                                                        •
-                                                    </span>
-                                                    <span>
-                                                        <strong>
-                                                            10 to 19 eligible
-                                                            videos:
-                                                        </strong>{" "}
-                                                        your RPM increases to
-                                                        $1.10
-                                                    </span>
-                                                </li>
-                                                <li className="flex items-center">
-                                                    <span className="text-purple-400 mr-3 text-xl font-bold">
-                                                        •
-                                                    </span>
-                                                    <span>
-                                                        <strong>
-                                                            20 to 29 eligible
-                                                            videos:
-                                                        </strong>{" "}
-                                                        your RPM increases to
-                                                        $1.20
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                            <p>
-                                                This bonus applies retroactively
-                                                to all views on qualifying
-                                                videos from that month. Only
-                                                videos that follow our content
-                                                guidelines and tagging rules
-                                                will be counted. Please note:
-                                                low-effort spam, reposts, or
-                                                attempts to game the system may
-                                                disqualify you from the bonus at
-                                                our discretion.
-                                            </p>
-                                        </div>
+                                        Yes. If you post 10+ eligible videos in
+                                        a month and we add a matching 10% bonus
+                                        to that month’s payout This goes on for
+                                        15 videos (+15% on total payout) and 20
+                                        videos.
+                                        <br /> Only videos that follow our
+                                        content guidelines and required tags
+                                        count. Spam, reposts, or attempts to
+                                        game the system are ineligible and may
+                                        void the bonus.
                                     </div>
                                 </div>
                             </div>

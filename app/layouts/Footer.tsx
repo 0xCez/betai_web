@@ -193,11 +193,11 @@ export default function Footer() {
                 aria-label="Download Call to Action"
                 className="w-full max-w-[1200px] mx-auto px-4 mt-32 mb-20"
             >
-                <div className="w-full rounded-[30px] border border-[rgba(0,194,224,0.2)] border-t-[rgba(0,194,224,0.1)] bg-gradient-to-b from-[#000001] from-0% via-[#001720] via-79% to-[#002230] to-100% p-16 text-center relative overflow-hidden">
-                    <h2 className="text-[26px] md:text-[26px] font-bold text-white mb-4">
+                <div className="w-full rounded-[30px] border border-[rgba(0,194,224,0.4)] border-t-[rgba(0,194,224,0.4)] bg-gradient-to-b from-[#000001] from-0% via-[#001720] via-79% to-[#002230] to-100% p-16 text-center relative overflow-hidden">
+                    <h2 className="text-[26px] md:text-5xl font-medium text-white mb-6">
                         Use math, not luck.
                     </h2>
-                    <p className="text-white/60 text-lg mb-8 max-w-[500px] mx-auto">
+                    <p className="text-white/60 text-lg md:text-2xl mb-10 max-w-[650px] mx-auto">
                         Follow data to guide your bets: line moves, money split,
                         injuries, weather, refs... Trusted by{" "}
                         <span className="text-white">15,000+ bettors.</span>
@@ -323,7 +323,7 @@ export default function Footer() {
                         </nav>
                     </div>
                     <div className="mt-16 pt-8 border-t border-white/10">
-                        <p className="text-white/40 text-sm">
+                        <p className="text-white/40 text-sm space-x-5">
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -331,8 +331,10 @@ export default function Footer() {
                                 href="https://asymmetriclabs.xyz"
                             >
                                 THE AWESOME COMPANY S.A
-                            </a>{" "}
-                            © {moment().format("YYYY")} All rights reserved
+                            </a>
+                            <span className="uppercase">
+                                {moment().format("YYYY")} All rights reserved
+                            </span>
                         </p>
                     </div>
                 </div>

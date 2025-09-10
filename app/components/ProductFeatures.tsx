@@ -20,7 +20,7 @@ export default function ProductFeatures() {
                     <h1 className="text-white text-4xl font-medium mb-10">
                         From screenshot to signal
                     </h1>
-                    <p className="text-white/50 text-2xl">
+                    <p className="text-white/50 text-lg md:text-xl">
                         Snap a pic of your bet slip or live game on TV. Bet.AI
                         turns it into a clear, explainable brief, so you can
                         make sharper decisions without digging for hours.
@@ -40,7 +40,7 @@ export default function ProductFeatures() {
                     <h2 className="text-white text-4xl font-medium mb-10">
                         Data-backed, AI-driven insights
                     </h2>
-                    <p className="text-white/50 text-2xl">
+                    <p className="text-white/50 text-lg md:text-xl">
                         Our model parses thousands of data points: line
                         movement, public vs sharp moves, team form, injuries,
                         travel, and more.
@@ -60,7 +60,7 @@ export default function ProductFeatures() {
                     <h2 className="text-white text-4xl font-medium mb-10">
                         Every detail, surfaced
                     </h2>
-                    <p className="text-white/50 text-2xl">
+                    <p className="text-white/50 text-lg md:text-xl">
                         Head-to-head, momentum, weather, refs, rest, travel...
                         Bet.AI puts the small hidden edges right in front of you
                         so you don’t miss them.
@@ -80,7 +80,7 @@ export default function ProductFeatures() {
                     <h2 className="text-white text-4xl font-medium mb-10">
                         Market context, decoded
                     </h2>
-                    <p className="text-white/50 text-2xl">
+                    <p className="text-white/50 text-lg md:text-xl">
                         See how the line moved and where the money’s going.
                         Compare public action vs sharp activity to understand
                         the story behind today’s price.
@@ -100,7 +100,7 @@ export default function ProductFeatures() {
                     <h2 className="text-white text-4xl font-medium mb-10">
                         Ask our analyst, 24/7
                     </h2>
-                    <p className="text-white/50 text-2xl">
+                    <p className="text-white/50 text-lg md:text-xl">
                         Debate about any game: odd shifts, injuries, prop
                         angles, line moves, hidden risks. Get instant,
                         data-grounded answers you can sanity-check, just
