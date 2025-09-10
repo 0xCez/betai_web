@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import * as motion from "motion/react-client";
+import { FAQs } from "@/json/mock/contents";
 
 export default function Affiliation() {
+    const [accordionIndex, setAccordionIndex] = useState<number | null>(null);
+
     return (
         <div>
             <div>
@@ -236,117 +239,61 @@ export default function Affiliation() {
                             questions about our creator program.
                         </p>
                         <div className="space-y-4 md:space-y-4 space-y-2 max-w-[700px] mx-auto">
-                            <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
-                                <button className="w-full flex items-center justify-between p-6 text-left">
-                                    <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        When are payments processed?
-                                    </span>
-                                    <ChevronDown className="text-white text-2xl" />
-                                </button>
-                                <div className="overflow-hidden">
-                                    <div className="p-6 pt-0 text-white/70">
-                                        Bet.AI™ creators are paid on the 1st of
-                                        each month. We take a snapshot of all
-                                        the views generated during the previous
-                                        month and pay you the corresponding
-                                        amount.
-                                    </div>
+                            {FAQs.map((_faq, index) => (
+                                <div
+                                    key={index}
+                                    className="rounded-[20px] bg-linear-to-r from-[#0c0c0c] from-55% to-[#101010] to-100% border border-white/5 overflow-hidden"
+                                >
+                                    <button
+                                        onClick={() =>
+                                            setAccordionIndex((prev) =>
+                                                index === prev ? null : index
+                                            )
+                                        }
+                                        className="w-full flex items-center justify-between p-6 text-left cursor-pointer"
+                                    >
+                                        <span className="text-white text-[18px] md:text-[20px] font-medium">
+                                            {_faq.title}
+                                        </span>
+                                        <motion.span
+                                            animate={{
+                                                rotate:
+                                                    accordionIndex === index
+                                                        ? 180
+                                                        : 0,
+                                            }}
+                                            transition={{ duration: 0.3 }}
+                                        >
+                                            <ChevronDown className="text-white text-2xl" />
+                                        </motion.span>
+                                    </button>
+                                    <motion.div
+                                        initial={false}
+                                        animate={{
+                                            height:
+                                                index === accordionIndex
+                                                    ? "auto"
+                                                    : 0,
+                                            opacity:
+                                                index === accordionIndex
+                                                    ? 1
+                                                    : 0,
+                                        }}
+                                        transition={{
+                                            duration: 0.4,
+                                            ease: "easeInOut",
+                                        }}
+                                        className="overflow-hidden"
+                                    >
+                                        <div
+                                            className="p-6 pt-0 text-white/70 w-11/12"
+                                            dangerouslySetInnerHTML={{
+                                                __html: _faq.content,
+                                            }}
+                                        />
+                                    </motion.div>
                                 </div>
-                            </div>
-                            <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
-                                <button className="w-full flex items-center justify-between p-6 text-left">
-                                    <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        What payment methods do we support?
-                                    </span>
-                                    <ChevronDown className="text-white text-2xl" />
-                                </button>
-                                <div className="overflow-hidden">
-                                    <div className="p-6 pt-0 text-white/70">
-                                        We currently only support PayPal or Bank
-                                        payments for amounts above 500$ (this
-                                        may change in the future).
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
-                                <button className="w-full flex items-center justify-between p-6 text-left">
-                                    <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        Can I post as much content as I want?
-                                    </span>
-                                    <ChevronDown className="text-white text-2xl" />
-                                </button>
-                                <div className="overflow-hidden">
-                                    <div className="p-6 pt-0 text-white/70">
-                                        Yes, you can post as much content as you
-                                        want. We will pay you for all the views
-                                        generated.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
-                                <button className="w-full flex items-center justify-between p-6 text-left">
-                                    <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        When can I start making and posting
-                                        content?
-                                    </span>
-                                    <ChevronDown className="text-white text-2xl" />
-                                </button>
-                                <div className="overflow-hidden">
-                                    <div className="p-6 pt-0 text-white/70">
-                                        Once you sign the agreement, you can
-                                        start making content. (Takes 2 minutes)
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
-                                <button className="w-full flex items-center justify-between p-6 text-left">
-                                    <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        Is there a minimum payout?
-                                    </span>
-                                    <ChevronDown className="text-white text-2xl" />
-                                </button>
-                                <div className="overflow-hidden">
-                                    <div className="p-6 pt-0 text-white/70">
-                                        Yes, $20!
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
-                                <button className="w-full flex items-center justify-between p-6 text-left">
-                                    <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        How long do views count toward payment?
-                                    </span>
-                                    <ChevronDown className="text-white text-2xl" />
-                                </button>
-                                <div className="overflow-hidden">
-                                    <div className="p-6 pt-0 text-white/70">
-                                        Views for each videos are counted up to
-                                        3 weeks (21 days) after you post it.
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="rounded-[20px] bg-[#0F0F0F] border border-white/5 overflow-hidden">
-                                <button className="w-full flex items-center justify-between p-6 text-left">
-                                    <span className="text-white text-[18px] md:text-[20px] font-medium">
-                                        Are there performance bonuses?
-                                    </span>
-                                    <ChevronDown className="text-white text-2xl" />
-                                </button>
-                                <div className="overflow-hidden">
-                                    <div className="p-6 pt-0 text-white/70">
-                                        Yes. If you post 10+ eligible videos in
-                                        a month and we add a matching 10% bonus
-                                        to that month’s payout This goes on for
-                                        15 videos (+15% on total payout) and 20
-                                        videos.
-                                        <br /> Only videos that follow our
-                                        content guidelines and required tags
-                                        count. Spam, reposts, or attempts to
-                                        game the system are ineligible and may
-                                        void the bonus.
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
