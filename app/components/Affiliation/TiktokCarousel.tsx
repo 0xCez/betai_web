@@ -3,6 +3,8 @@
 import React, { lazy, Suspense } from "react";
 const Marquee = lazy(() => import("react-fast-marquee"));
 import TiktokCard from "./TiktokCard";
+import InstagramEmbed from "./InstagramEmbed";
+import { EMBEDDED_VIDEOS } from "@/json/mock/contents";
 
 export default function TiktokCarousel() {
     return (
@@ -23,12 +25,13 @@ export default function TiktokCarousel() {
                 </div>
                 <Suspense fallback={null}>
                     <Marquee pauseOnHover>
-                        <TiktokCard />
-                        <TiktokCard />
-                        <TiktokCard />
-                        <TiktokCard />
-                        <TiktokCard />
-                        <TiktokCard />
+                        {EMBEDDED_VIDEOS.map((_item, index) =>
+                            _item.type === "instagram" ? (
+                                <InstagramEmbed url={_item.url} key={index} />
+                            ) : (
+                                <TiktokCard />
+                            )
+                        )}
                     </Marquee>
                 </Suspense>
             </div>

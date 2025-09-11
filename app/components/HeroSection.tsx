@@ -2,6 +2,12 @@ import assets from "@/json/assets";
 import React from "react";
 import * as motion from "motion/react-client";
 import { Link } from "react-router";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-cards";
+import "@/styles/style.css";
 
 export default function HeroSection() {
     return (
@@ -154,12 +160,42 @@ export default function HeroSection() {
                 }}
             >
                 <div className="mt-[0px] w-full md:w-[100%] lg:w-full max-w-[1000px] mx-auto px-4">
-                    <img
+                    {/* <img
                         src={assets.mockup}
                         alt="Bet.AI App interface"
                         fetchPriority="high"
                         className="w-full h-auto"
-                    />
+                    /> */}
+                    <Swiper
+                        effect={"coverflow"}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        // loop
+                        slidesPerView={"auto"}
+                        coverflowEffect={{
+                            rotate: 50,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: true,
+                        }}
+                        pagination={true}
+                        modules={[EffectCoverflow]}
+                        className="w-full h-auto"
+                    >
+                        <SwiperSlide>
+                            <img src={assets.mockup1} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={assets.mockup2} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={assets.mockup3} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={assets.mockup4} />
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </motion.div>
         </div>

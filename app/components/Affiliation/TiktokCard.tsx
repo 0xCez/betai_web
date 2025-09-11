@@ -11,7 +11,7 @@ export default function TiktokCard() {
                     </div>
                 )}
                 <iframe
-                    src="https://www.tiktok.com/embed/v2/7460792937895562504?lang=en&amp;referrer=https%3A%2F%2Ftallerapp.xyz"
+                    src="https://www.instagram.com/bet_ai_app/reel/DLlLQMpA5NH/"
                     className="w-full h-full rounded-[20px] border-0"
                     allowFullScreen
                     loading="lazy"

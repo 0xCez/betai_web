@@ -57,3 +57,30 @@ export const CREATOR_OPTIONS = [
         content: "Get pay $1-3 for every 1k views.",
     },
 ];
+
+export const EMBEDDED_VIDEOS = [
+    {
+        type: "instagram",
+        url: "https://www.instagram.com/bet_ai_app/reel/DLlLQMpA5NH/",
+    },
+    {
+        type: "instagram",
+        url: "https://www.instagram.com/bet_ai_app/reel/DLZxfo5IiJI/",
+    },
+    {
+        type: "instagram",
+        url: "https://www.instagram.com/bet_ai_app/reel/DI9tbSLgUvz/",
+    },
+    {
+        type: "tiktok",
+        url: "https://www.tiktok.com/@perecastorai/video/7510910389006142742",
+    },
+    {
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DIq543NObyA/",
+    },
+    {
+        type: "instagram",
+        url: "https://www.instagram.com/reel/DJJ8t0DRzlX/",
+    },
+];
