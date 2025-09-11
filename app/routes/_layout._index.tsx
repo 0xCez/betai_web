@@ -7,8 +7,8 @@ import ReviewSection from "@/components/ReviewSection";
 
 export function meta({}: MetaArgs) {
     return [
-        { title: "New React Router App" },
-        { name: "description", content: "Welcome to React Router!" },
+        { title: "Bet.AI" },
+        { name: "description", content: "Welcome to Bet.AI!" },
     ];
 }
 
