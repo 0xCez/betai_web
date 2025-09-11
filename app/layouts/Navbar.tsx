@@ -7,7 +7,7 @@ export default function Navbar() {
         <>
             <header>
                 <nav
-                    className="w-full border-b border-white/10 fixed top-0 left-0 z-50 bg-black/50 backdrop-blur-lg"
+                    className="w-full border-b border-white/10 fixed top-0 left-0 z-50 bg-[#0B0B0B] backdrop-blur-lg"
                     aria-label="Main navigation"
                 >
                     <div className="w-full">

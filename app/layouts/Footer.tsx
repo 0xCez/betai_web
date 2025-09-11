@@ -10,7 +10,7 @@ export default function Footer() {
                 aria-label="Download Call to Action"
                 className="w-full max-w-[1200px] mx-auto px-4 mt-32 mb-20"
             >
-                <div className="w-full rounded-[30px] border-[0.93px] border-[rgba(0,194,224,0.2)]  bg-gradient-to-b from-[#000001] from-0% via-[#001720] via-79% to-[#002230] to-100% p-16 text-center relative overflow-hidden">
+                <div className="w-full rounded-[30px] border-[0.93px] border-[rgba(0,194,224,0.2)]  bg-gradient-to-b from-[#0B0B0B] from-0% via-[#001720] via-79% to-[#002230] to-100% p-16 text-center relative overflow-hidden">
                     <h2 className="text-[26px] md:text-4xl font-medium text-white mb-6">
                         Use math, not luck.
                     </h2>
@@ -173,14 +173,9 @@ export default function Footer() {
                     </div>
                     <div className="mt-16 pt-8 border-t border-white/10">
                         <p className="text-white/40 text-sm space-x-1">
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-white/60 transition-colors"
-                                href="https://asymmetriclabs.xyz"
-                            >
+                            <span className="hover:text-white/60 transition-colors">
                                 THE AWESOME COMPANY S.A
-                            </a>
+                            </span>
                             <span className="align-middle text-2xl ">
                                 &reg;
                             </span>
