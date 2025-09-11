@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function InstagramEmbed() {
+export default function InstagramEmbed2() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -43,7 +43,7 @@ export default function InstagramEmbed() {
                 <blockquote
                     className="instagram-media"
                     data-instgrm-captioned
-                    data-instgrm-permalink="https://www.instagram.com/reel/DLlLQMpA5NH/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    data-instgrm-permalink="https://www.instagram.com/reel/DLZxfo5IiJI/?utm_source=ig_embed&amp;utm_campaign=loading"
                     data-instgrm-version="14"
                     style={{
                         background: "#FFF",

@@ -13,15 +13,15 @@ export default function ReviewSection() {
                     initial={{ y: 15, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{
-                        duration: 0.6,
+                        duration: 0.4,
                         ease: "easeInOut", // 👈 easing in
                     }}
                     className="text-left mb-8"
                 >
                     <span className="text-[16px] text-white font-rethink-sans border border-white/10 px-4 py-2 rounded-full bg-[rgba(255,255,255,0.02)] shadow-[inset_0px_1px_10px_0px_rgba(255,255,255,0.05)] inline-block mb-[10px]">
-                        Users feedback
+                        User feedback
                     </span>
-                    <h2 className="mt-4 text-[26px] md:text-[40px] font-bold text-white font-rethink-sans leading-[35px] md:leading-[45px] flex flex-col">
+                    <h2 className="mt-4 text-[26px] md:text-[40px] font-semibold text-white font-rethink-sans leading-[35px] md:leading-[45px] flex flex-col">
                         <span>
                             There’s a reason 15,000+ bettors use Bet.AI before
                         </span>
@@ -46,7 +46,7 @@ export default function ReviewSection() {
                         initial={{ y: 15, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
-                            duration: 0.6,
+                            duration: 0.4,
                             ease: "easeInOut", // 👈 easing in
                         }}
                         whileHover={{
@@ -107,7 +107,7 @@ export default function ReviewSection() {
                         initial={{ y: 15, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{
-                            duration: 0.6,
+                            duration: 0.4,
                             ease: "easeInOut", // 👈 easing in
                             delay: 0.2,
                         }}

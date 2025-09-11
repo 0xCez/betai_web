@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function TiktokCard() {
+export default function TiktokCard({ url }: { url: string }) {
     const [isLoading, setIsLoading] = useState(true);
     return (
         <div className="flex-shrink-0 w-[280px] md:w-[320px] mx-3 relative group cursor-pointer">
@@ -11,7 +11,7 @@ export default function TiktokCard() {
                     </div>
                 )}
                 <iframe
-                    src="https://www.instagram.com/bet_ai_app/reel/DLlLQMpA5NH/"
+                    src={url}
                     className="w-full h-full rounded-[20px] border-0"
                     allowFullScreen
                     loading="lazy"

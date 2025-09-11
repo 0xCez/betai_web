@@ -17,7 +17,7 @@ export default function Footer() {
                     <p className="text-white/60 text-lg md:text-xl mb-7 max-w-[550px] mx-auto">
                         Follow data to guide your bets: line moves, money split,
                         injuries, weather, refs... Trusted by{" "}
-                        <span className="text-white">15,000+ bettors.</span>
+                        <span className="text-white/60">15,000+ bettors.</span>
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
                         <a
@@ -57,7 +57,7 @@ export default function Footer() {
             >
                 <div className="max-w-[1200px] mx-auto px-4">
                     <div className="flex flex-col md:flex-row md:justify-between gap-5 md:gap-10">
-                        <div className="mb-12 md:mb-0 flex flex-col md:flex-row shrink-0 gap-4">
+                        <div className="mb-12 md:mb-0 flex flex-col md:flex-row flex-wrap shrink-0 gap-4">
                             <a href="/" className="shrink-0">
                                 <img
                                     alt="Bet.AI Logo"
@@ -71,108 +71,108 @@ export default function Footer() {
                                 all the edges that matter.
                             </p>
                         </div>
-                        <nav className="flex flex-col sm:flex-row flex-wrap gap-8 sm:gap-16">
-                            <div className="md:w-[200px]">
-                                <h2 className="text-white font-semibold mb-4">
-                                    Responsible Gambling
-                                </h2>
-                                <p className="text-white/60 transition-colors italic">
-                                    DISCLAIMER: Analytics for informational
-                                    purposes only. Not betting advice. 18+ only.
-                                    Play responsibly.
-                                </p>
-                            </div>
-                            <div>
-                                <h2 className="text-white font-semibold mb-4">
-                                    About
-                                </h2>
-                                <ul className="space-y-3">
-                                    <li>
-                                        <a
-                                            href="/#features"
-                                            className="text-white/60 hover:text-white transition-colors"
-                                        >
-                                            Features
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="/#product"
-                                            className="text-white/60 hover:text-white transition-colors"
-                                        >
-                                            Product
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className="text-white/60 hover:text-white transition-colors"
-                                            href="/affiliation"
-                                        >
-                                            Creator program
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h2 className="text-white font-semibold mb-4">
-                                    Company
-                                </h2>
-                                <ul className="space-y-3">
-                                    <li>
-                                        <a
-                                            className="text-white/60 hover:text-white transition-colors"
-                                            href="https://betaiapp.com/privacy.html"
-                                        >
-                                            Privacy Policy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className="text-white/60 hover:text-white transition-colors"
-                                            href="https://betaiapp.com/terms.html"
-                                        >
-                                            Terms &amp; Conditions
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h2 className="text-white font-semibold mb-4">
-                                    Follow us
-                                </h2>
-                                <ul className="space-y-3">
-                                    <li>
-                                        <a
-                                            className="text-[#006F80] transition-colors flex items-center gap-2"
-                                            href="https://www.instagram.com/bet_ai_app/"
-                                        >
-                                            <img
-                                                src={assets.icons.instagram}
-                                                alt="Instagram"
-                                                className="size-5"
-                                            />
-                                            Instagram
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            className="text-[#006F80] transition-colors flex items-center gap-2"
-                                            href="https://www.tiktok.com/@perecastorai"
-                                        >
-                                            <img
-                                                src={assets.icons.tiktok}
-                                                alt="Tiktok"
-                                                className="size-5"
-                                            />
-                                            Tiktok
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
+                        {/* <nav className="flex flex-col sm:flex-row flex-wrap gap-8 sm:gap-16"> */}
+                        <div className="md:w-[200px]">
+                            <h2 className="text-white font-semibold mb-4">
+                                Responsible Gambling
+                            </h2>
+                            <p className="text-white/60 transition-colors italic">
+                                DISCLAIMER: Analytics for informational purposes
+                                only. Not betting advice. 18+ only. Play
+                                responsibly.
+                            </p>
+                        </div>
+                        <div>
+                            <h2 className="text-white font-semibold mb-4">
+                                About
+                            </h2>
+                            <ul className="space-y-3">
+                                <li>
+                                    <a
+                                        href="/#features"
+                                        className="text-white/60 hover:text-white transition-colors"
+                                    >
+                                        Features
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/#product"
+                                        className="text-white/60 hover:text-white transition-colors"
+                                    >
+                                        Product
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="text-white/60 hover:text-white transition-colors"
+                                        href="/affiliation"
+                                    >
+                                        Creator program
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 className="text-white font-semibold mb-4">
+                                Company
+                            </h2>
+                            <ul className="space-y-3">
+                                <li>
+                                    <a
+                                        className="text-white/60 hover:text-white transition-colors"
+                                        href="https://betaiapp.com/privacy.html"
+                                    >
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="text-white/60 hover:text-white transition-colors"
+                                        href="https://betaiapp.com/terms.html"
+                                    >
+                                        Terms &amp; Conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 className="text-white font-semibold mb-4">
+                                Follow us
+                            </h2>
+                            <ul className="space-y-3">
+                                <li>
+                                    <a
+                                        className="text-[#006F80] transition-colors flex items-center gap-2"
+                                        href="https://www.instagram.com/bet_ai_app/"
+                                    >
+                                        <img
+                                            src={assets.icons.instagram}
+                                            alt="Instagram"
+                                            className="size-5"
+                                        />
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="text-[#006F80] transition-colors flex items-center gap-2"
+                                        href="https://www.tiktok.com/@perecastorai"
+                                    >
+                                        <img
+                                            src={assets.icons.tiktok}
+                                            alt="Tiktok"
+                                            className="size-5"
+                                        />
+                                        Tiktok
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        {/* </nav> */}
                     </div>
                     <div className="mt-16 pt-8 border-t border-white/10">
-                        <p className="text-white/40 text-sm space-x-5">
+                        <p className="text-white/40 text-sm space-x-1">
                             <a
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -181,6 +181,9 @@ export default function Footer() {
                             >
                                 THE AWESOME COMPANY S.A
                             </a>
+                            <span className="align-middle text-2xl ">
+                                &reg;
+                            </span>
                             <span className="uppercase">
                                 {moment().format("YYYY")} All rights reserved
                             </span>

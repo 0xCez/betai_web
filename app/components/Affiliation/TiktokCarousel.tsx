@@ -5,6 +5,10 @@ const Marquee = lazy(() => import("react-fast-marquee"));
 import TiktokCard from "./TiktokCard";
 import InstagramEmbed from "./InstagramEmbed";
 import { EMBEDDED_VIDEOS } from "@/json/mock/contents";
+import InstagramEmbed5 from "./InstagramEmbed5";
+import InstagramEmbed4 from "./InstagramEmbed4";
+import InstagramEmbed3 from "./InstagramEmbed3";
+import InstagramEmbed2 from "./InstagramEmbed2";
 
 export default function TiktokCarousel() {
     return (
@@ -25,13 +29,12 @@ export default function TiktokCarousel() {
                 </div>
                 <Suspense fallback={null}>
                     <Marquee pauseOnHover>
-                        {EMBEDDED_VIDEOS.map((_item, index) =>
-                            _item.type === "instagram" ? (
-                                <InstagramEmbed url={_item.url} key={index} />
-                            ) : (
-                                <TiktokCard />
-                            )
-                        )}
+                        <InstagramEmbed />
+                        <InstagramEmbed2 />
+                        <InstagramEmbed3 />
+                        <TiktokCard url="https://www.tiktok.com/@perecastorai/video/7510910389006142742" />
+                        <InstagramEmbed4 />
+                        <InstagramEmbed5 />
                     </Marquee>
                 </Suspense>
             </div>
