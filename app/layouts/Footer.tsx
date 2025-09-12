@@ -2,8 +2,14 @@ import assets from "@/json/assets";
 import React from "react";
 import moment from "moment";
 import { Instagram } from "lucide-react";
+import { Link, useNavigate } from "react-router";
 
 export default function Footer() {
+    const navigate = useNavigate();
+
+    const scrollToSection = (id: string) => {
+        navigate("/", { state: { scrollTo: id } });
+    };
     return (
         <div>
             <section
@@ -62,7 +68,7 @@ export default function Footer() {
                                 <img
                                     alt="Bet.AI Logo"
                                     loading="lazy"
-                                    className="rounded-[14px] size-14"
+                                    className="size-14"
                                     src={assets.logo}
                                 />
                             </a>
@@ -88,28 +94,32 @@ export default function Footer() {
                             </h2>
                             <ul className="space-y-3">
                                 <li>
-                                    <a
-                                        href="/#features"
+                                    <p
+                                        onClick={() =>
+                                            scrollToSection("features")
+                                        }
                                         className="text-white/60 hover:text-white transition-colors"
                                     >
                                         Features
-                                    </a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <a
-                                        href="/#product"
+                                    <p
+                                        onClick={() =>
+                                            scrollToSection("product")
+                                        }
                                         className="text-white/60 hover:text-white transition-colors"
                                     >
                                         Product
-                                    </a>
+                                    </p>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="text-white/60 hover:text-white transition-colors"
-                                        href="/affiliation"
+                                        to="/affiliation"
                                     >
                                         Creator program
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -119,20 +129,20 @@ export default function Footer() {
                             </h2>
                             <ul className="space-y-3">
                                 <li>
-                                    <a
+                                    <Link
                                         className="text-white/60 hover:text-white transition-colors"
-                                        href="https://betaiapp.com/privacy.html"
+                                        to="/privacy"
                                     >
                                         Privacy Policy
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a
+                                    <Link
                                         className="text-white/60 hover:text-white transition-colors"
-                                        href="https://betaiapp.com/terms.html"
+                                        to="terms"
                                     >
                                         Terms &amp; Conditions
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
