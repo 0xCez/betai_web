@@ -1,8 +1,14 @@
 import assets from "@/json/assets";
 import React from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 export default function Navbar() {
+    const navigate = useNavigate();
+
+    const scrollToSection = (id: string) => {
+        navigate("/", { state: { scrollTo: id } });
+    };
+
     return (
         <>
             <header>
@@ -27,18 +33,18 @@ export default function Navbar() {
                                 >
                                     Creator program
                                 </Link>
-                                <Link
-                                    to="/#features"
+                                <p
+                                    onClick={() => scrollToSection("features")}
                                     className="text-white/50 text-[14px] whitespace-nowrap transition-colors duration-300 hover:text-white"
                                 >
                                     Features
-                                </Link>
-                                <Link
-                                    to="/#product"
+                                </p>
+                                <p
+                                    onClick={() => scrollToSection("product")}
                                     className="text-white/50 text-[14px] whitespace-nowrap transition-colors duration-300 hover:text-white"
                                 >
                                     Product
-                                </Link>
+                                </p>
                             </div>
                             <div className="flex lg:hidden items-center gap-2.5 flex-shrink-0">
                                 <Link
