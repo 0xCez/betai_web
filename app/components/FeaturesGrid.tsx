@@ -54,8 +54,8 @@ export function FeatureGrid() {
                         className="text-white/50 text-[14px] md:text-base font-medium leading-[22.4px] tracking-[0.32px]"
                         aria-labelledby="feature-0"
                     >
-                        Upload a bet slip or take a pic of the game your
-                        watching: Bet.AI runs the numbers for you in seconds.
+                        Take a pic of the game your watching or your
+                        bet slip: Bet.AI runs the numbers for you in seconds.
                     </p>
                 </motion.div>
                 <motion.div
