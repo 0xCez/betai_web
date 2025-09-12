@@ -25,7 +25,7 @@ export function FeatureGrid() {
                     full picture.
                 </p>
             </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 max-w-[1200px] mx-auto px-4 relative w-full before:hidden md:before:block before:content-[''] before:absolute before:top-[50%] before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.05)_0%,rgba(0,221,255,0.4)_55%,rgba(0,221,255,0.05)_100%)]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-0 max-w-[1200px] mx-auto px-4 relative w-full before:hidden md:before:block before:content-[''] before:absolute before:top-[50%] before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.05)_0%,rgba(0,221,255,0.25)_55%,rgba(0,221,255,0.05)_100%)]">
                 <motion.div
                     initial={{ y: 15, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -34,7 +34,7 @@ export function FeatureGrid() {
                         ease: "easeInOut", // 👈 easing in
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.25)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.25)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
@@ -67,7 +67,7 @@ export function FeatureGrid() {
                         delay: 0.1,
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(180deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.25)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.25)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
@@ -97,7 +97,7 @@ export function FeatureGrid() {
                         delay: 0.2,
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.25)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
@@ -127,7 +127,7 @@ export function FeatureGrid() {
                         delay: 0.1,
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.25)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.25)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
@@ -157,7 +157,7 @@ export function FeatureGrid() {
                         delay: 0.2,
                     }}
                     viewport={{ amount: 0.4 }}
-                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.4)_50%,rgba(0,221,255,0.00)_100%)]'
+                    className='px-0 py-8 md:p-5 relative  after:hidden md:after:block after:content-[""] after:absolute after:top-0 after:right-0 after:w-px after:h-full after:bg-[linear-gradient(0deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.25)_100%)] before:md:hidden before:block before:content-[""] before:absolute before:bottom-0 before:left-0 before:w-full before:h-px before:bg-[linear-gradient(90deg,rgba(0,221,255,0.00)_0%,rgba(0,221,255,0.25)_50%,rgba(0,221,255,0.00)_100%)]'
                 >
                     <div className="mb-3">
                         <img
