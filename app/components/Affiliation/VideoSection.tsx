@@ -98,7 +98,7 @@ export default function VideoSection() {
                     </Link>
                 </div>
             </motion.div>
-            <motion.div
+            {/* <motion.div
                 initial={{ y: 15, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
@@ -125,7 +125,7 @@ export default function VideoSection() {
                         ></iframe>
                     </div>
                 </div>
-            </motion.div>
+            </motion.div> */}
         </div>
     );
 }
