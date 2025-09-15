@@ -23,6 +23,11 @@ export default {
     cLogo6: "/assets/images/cLogo6.png",
     cLogo7: "/assets/images/cLogo7.png",
     cLogo8: "/assets/images/cLogo8.png",
+    video1: "/assets/images/video1.mp4",
+    video2: "/assets/images/video2.mp4",
+    video3: "/assets/images/video3.mp4",
+    video4: "/assets/images/video4.mp4",
+    video5: "/assets/images/video5.mp4",
     icons: {
         android: "/assets/svg/android.svg",
         apple: "/assets/svg/apple.svg",

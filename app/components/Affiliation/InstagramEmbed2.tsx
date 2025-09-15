@@ -1,7 +1,11 @@
-import { useEffect, useState } from "react";
+import assets from "@/json/assets";
+import { useEffect, useRef, useState } from "react";
+import { IoPlay } from "react-icons/io5";
 
 export default function InstagramEmbed2() {
-    const [isLoading, setIsLoading] = useState(true);
+    const videoRef = useRef<HTMLVideoElement | null>(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         // inject Instagram script if not already present
@@ -40,28 +44,37 @@ export default function InstagramEmbed2() {
                         <div className="w-6 h-6 border-2 border-[#006F80] border-t-transparent rounded-full animate-spin"></div>
                     </div>
                 )}
-                <blockquote
-                    className="instagram-media"
-                    data-instgrm-captioned
-                    data-instgrm-permalink="https://www.instagram.com/reel/DLZxfo5IiJI/?utm_source=ig_embed&amp;utm_campaign=loading"
-                    data-instgrm-version="14"
-                    style={{
-                        background: "#FFF",
-                        border: 0,
-                        borderRadius: 3,
-                        boxShadow:
-                            "0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)",
-                        margin: 1,
-                        maxWidth: 540,
-                        minWidth: 326,
-                        padding: 0,
-                        width: "99.375%",
+                <video
+                    width="100%"
+                    height="100%"
+                    ref={videoRef}
+                    onLoad={() => setIsLoading(false)}
+                    onClick={() => {
+                        if (isPlaying) {
+                            videoRef.current?.pause();
+                        } else {
+                            videoRef.current?.play();
+                        }
+                        setIsPlaying((prev) => !prev);
                     }}
-                ></blockquote>
+                >
+                    <source src={assets.video2} />
+                </video>
+                {!isPlaying && (
+                    <IoPlay
+                        size={50}
+                        className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] pointer-events-none"
+                    />
+                )}
             </div>
-            <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/70 text-white text-xs px-2 py-1 rounded pointer-events-none">
+            <a
+                href="https://www.instagram.com/bet_ai_app/reel/DLZxfo5IiJI/"
+                target="_blank"
+                referrerPolicy="no-referrer"
+                className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black/70 text-white text-xs px-2 py-1 rounded"
+            >
                 Click to open
-            </div>
+            </a>
         </div>
     );
 }
