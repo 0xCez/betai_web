@@ -124,3 +124,7 @@ body {
         color-scheme: dark;
     }
 }
+
+.tiktok-embed {
+    margin: 0 auto !important;
+}

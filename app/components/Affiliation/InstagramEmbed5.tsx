@@ -7,35 +7,6 @@ export default function InstagramEmbed5() {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
 
-    useEffect(() => {
-        // inject Instagram script if not already present
-        if (
-            !document.querySelector(
-                "script[src='https://www.instagram.com/embed.js']"
-            )
-        ) {
-            const script = document.createElement("script");
-            script.src = "https://www.instagram.com/embed.js";
-            script.async = true;
-            document.body.appendChild(script);
-        }
-
-        // observe when Instagram replaces blockquote with iframe
-        const observer = new MutationObserver(() => {
-            const iframe = document.querySelector("iframe.instagram-media");
-            if (iframe) {
-                iframe.addEventListener("load", () => {
-                    setIsLoading(false); // Only hide loader when iframe content fully ready
-                });
-                observer.disconnect();
-            }
-        });
-
-        observer.observe(document.body, { childList: true, subtree: true });
-
-        return () => observer.disconnect();
-    }, []);
-
     return (
         <div className="flex-shrink-0 w-[280px] md:w-[320px] mx-3 relative group cursor-pointer">
             <div className="aspect-[9/16] w-full bg-black rounded-[20px] overflow-hidden relative">

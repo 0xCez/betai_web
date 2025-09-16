@@ -32,7 +32,7 @@ export default function TiktokCarousel() {
                         <InstagramEmbed />
                         <InstagramEmbed2 />
                         <InstagramEmbed3 />
-                        <TiktokCard url="https://www.tiktok.com/@perecastorai/video/7510910389006142742" />
+                        <TiktokCard />
                         <InstagramEmbed4 />
                         <InstagramEmbed5 />
                     </Marquee>
