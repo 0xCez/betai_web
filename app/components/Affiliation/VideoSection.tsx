@@ -69,7 +69,7 @@ export default function VideoSection() {
             >
                 <div className="flex justify-center items-center gap-2 md:gap-4 mt-8 flex-wrap">
                     <Link
-                        to="#product"
+                        to="https://docs.google.com/forms/d/e/1FAIpQLScVqQmMcJ6AsKz7wh5DDWVhTwjU_FYK44ndP7ejdYOMuNs9Pg/viewform"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="relative flex justify-center items-center w-[140px] md:w-[192px] h-[42px] md:h-[50px] px-[12px] md:px-[15px] py-[2px] gap-[8px] md:gap-[10px] rounded-[200px] transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(255,255,255,0.05)]"
