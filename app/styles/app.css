@@ -127,4 +127,9 @@ body {
 
 .tiktok-embed {
     margin: 0 auto !important;
+    transform: translate(-2px, -1px);
+}
+
+.tiktok-embed #embed-video-container > div {
+    border: none !important;
 }
