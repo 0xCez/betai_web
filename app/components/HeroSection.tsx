@@ -153,7 +153,7 @@ export default function HeroSection() {
                     delay: 0.6,
                 }}
             >
-                <div className="mt-[0px] w-full md:w-[100%] lg:w-full max-w-[1000px] mx-auto px-4">
+                <div className="mt-[0px] w-full md:w-[100%] lg:w-full max-w-[1200px] mx-auto px-4">
                     <img
                         src={assets.mockup}
                         alt="Bet.AI App interface"
