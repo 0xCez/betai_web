@@ -39,7 +39,7 @@ If Target Views are not met, payment is adjusted on a pro-rata basis or the Infl
 
 export const CREATOR_OPTIONS = [
     {
-        title: "SIGN THE AGREEMENT ✍",
+        title: "FILL THE FORM & SIGN THE AGREEMENT ✍",
         content:
             "Join the program by submitting your Paypal & a quick e-signature.",
     },
