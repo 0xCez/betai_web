@@ -21,7 +21,18 @@ export default function TiktokCard() {
             const iframe =
                 document.querySelector<HTMLIFrameElement>("blockquote>iframe");
             if (iframe) {
-                iframe.addEventListener("load", () => setIsLoading(false));
+                iframe.addEventListener("load", () => {
+                    // const innerDoc =
+                    //     iframe.contentDocument ||
+                    //     iframe.contentWindow?.document;
+                    // const targetDiv = innerDoc?.querySelector(
+                    //     "#embed-video-container > div"
+                    // );
+                    // if (targetDiv) {
+                    //     targetDiv.style;
+                    // }
+                    setIsLoading(false);
+                });
                 clearInterval(interval);
             }
         }, 300);
