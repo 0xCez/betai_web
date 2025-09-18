@@ -6,7 +6,7 @@ export default {
     card3: "/assets/images/card3.png",
     card4: "/assets/images/card4.png",
     card5: "/assets/images/card5.png",
-    mockup: "/assets/images/mockup.png",
+    mockup: "/assets/images/mockup.webp",
     mockup1: "/assets/images/mockup1.png",
     mockup2: "/assets/images/mockup2.png",
     mockup3: "/assets/images/mockup3.png",
